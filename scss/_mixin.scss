@@ -1,0 +1,44 @@
+*{
+     font-family: 'Poppins', sans-serif;
+     margin: 0; padding:0;
+     box-sizing: border-box;
+     text-decoration: none;
+     outline: none; border:none;
+     text-transform: capitalize;
+     transition: all .2s linear;
+}
+
+$black:#333;
+$white: #fff;
+$light-color: #666;
+$black-bg:rgba(17, 17, 17, .7);
+$light-bg:#eee;
+$white-smoke: whitesmoke;
+// $border: .2rem solid $blue;
+// $blue: #29d9d5;
+
+
+@mixin grid($val){
+     display:grid;
+     grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+     gap:1.5rem;
+}
+
+html{
+     font-size:62.5%;
+     overflow-x: hidden;
+     scroll-behavior: smooth;
+
+     &::-webkit-scrollbar{
+          width:1rem;
+     }
+     &::-webkit-scrollbar-track{
+          background:$black;
+     }
+     &::-webkit-scrollbar-thumb{
+          background: $light-color;
+     }
+}
+section{
+     padding: 2rem 9%;
+}
