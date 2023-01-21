@@ -14,8 +14,6 @@ $light-color: #666;
 $black-bg:rgba(17, 17, 17, .7);
 $light-bg:#eee;
 $white-smoke: whitesmoke;
-// $border: .2rem solid $blue;
-// $blue: #29d9d5;
 
 
 @mixin grid($val){
@@ -28,6 +26,7 @@ html{
      font-size:62.5%;
      overflow-x: hidden;
      scroll-behavior: smooth;
+     background: $white-smoke;
 
      &::-webkit-scrollbar{
           width:1rem;

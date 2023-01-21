@@ -1,0 +1,62 @@
+.footer-section{
+     .box-container{
+          @include grid(25rem);
+          .box{
+               padding: 1rem 0;
+               
+               img{
+                    padding-bottom: 1rem;
+               }
+               h3{
+                    font-size:2.2rem;
+                    color:$black;
+                    padding: 1rem 0;
+               }
+               p{
+                    font-size: 1.4rem;
+                    color:$light-color;
+                    padding: 1rem 0;
+                    line-height: 2;
+                    i{
+                         padding-right: .5rem;
+                         color:$blue;
+                      }
+               }
+               .share{
+                    padding-top: 1rem;
+                    a{
+                         height: 4.5rem;
+                         width:4.5rem;
+                         line-height: 4rem;
+                         font-size:1.7rem;
+                         border-radius:50%;
+                         border:$border;
+                         color:$blue;
+                         margin-right: .5rem;
+                         text-align: center;
+                              &:hover{
+                                   background: $blue;
+                                   color:$black;
+                              }
+                    }
+               }
+               .links{
+                    font-size:1.4rem;
+                    color:$light-color;
+                    padding:1rem 0;
+                    display: block;
+     
+                      &:hover{
+                         color:$blue;
+                         i{
+                              padding-right: 2rem;
+                           }     
+                      }  
+                      i{
+                         padding-right: .5rem;
+                         color:$blue;
+                      }
+               }
+          }
+     }
+}

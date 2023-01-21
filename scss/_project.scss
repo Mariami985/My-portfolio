@@ -1,0 +1,81 @@
+.section-projects .box-container{
+     @include grid(32rem);
+          .box{
+               border-radius: 1rem;
+               background: $light-bg;
+               overflow: hidden;
+                    &:hover{
+                         .image img{
+                              transform: scale(1.1);
+                         }
+                         .image a{
+                              display: block;
+                              position: absolute;
+                              top: 70%;
+                              left: 70%;
+                              background-color: #555;
+                              color: white;
+                              font-size: 1.2rem;
+                              padding: .6rem 1.2rem;
+                              border: none;
+                              cursor: pointer;
+                              border-radius: .5rem;
+                              text-align: center;
+
+                              &:hover{
+                                   background-color: black;
+                              }
+                         }
+                         
+                    }
+               .image{
+                    border-radius: .5rem;
+                    overflow: hidden;
+                    height: 25rem;
+                    width:100%;
+                    position: relative;
+                    img{
+                         height: 100%;
+                         width:100%;
+                         object-fit: cover;
+                    }
+                    a{
+                         display: none;
+                    }
+               }
+               .content{
+                    padding: 2rem;
+                    p{
+                         max-width:60rem;
+                         margin:1rem auto;
+                         font-size:1.4rem;
+                         color:$black-bg;
+                         line-height: 2;
+                              &:hover {
+                                   color:$black;
+                              }
+                         cursor: pointer;
+                    }
+                    .icon{
+                         padding-top: 1rem;
+                         display: flex;
+                         align-items: center;
+                         justify-content: space-between;
+
+                         a{
+                              font-size:1.4rem;
+                              color:$black-bg;
+
+                              &:hover {
+                                   color:$black;
+                              }
+
+                              i{
+                                   padding-right: .5rem;
+                                   color:$light-color
+                              }
+                         }
+                    }
+               }
+          }
+}
