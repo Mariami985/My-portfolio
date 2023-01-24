@@ -11,7 +11,11 @@
 }
 
 @media(max-width: 768px){
-     #menu-btn{
+     #contact{
+          display: none;
+     }
+     #menu-btn,
+     #info-btn{
           display:inline-block;
      }
      .header{
@@ -42,6 +46,9 @@
                }
           }
      }
+     .contact-info{
+          top:8.5rem;
+     }
 }
 @media (max-width: 540px){
      .banner .box .content{
@@ -64,5 +71,18 @@
      .row{
           width: 15%;
      }
-    
+     .contact-info{
+          top:11rem;
+     }
+     .banner .box .content {
+               top:auto;
+          span{
+               font-size:2.5rem;
+               padding-top:.5rem;
+          }
+          .btn{
+               font-size:1rem;
+          }
+     }
 }
+

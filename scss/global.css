@@ -130,7 +130,8 @@ section {
   transform: scale(1.5);
 }
 
-#menu-btn {
+#menu-btn,
+#info-btn {
   display: none;
 }
 
@@ -473,7 +474,11 @@ section {
   }
 }
 @media (max-width: 768px) {
-  #menu-btn {
+  #contact {
+    display: none;
+  }
+  #menu-btn,
+#info-btn {
     display: inline-block;
   }
   .header {
@@ -502,6 +507,9 @@ section {
   .header .navbar ul li ul li a {
     padding-left: 4rem;
   }
+  .contact-info {
+    top: 8.5rem;
+  }
 }
 @media (max-width: 540px) {
   .banner .box .content {
@@ -523,5 +531,18 @@ section {
   }
   .row {
     width: 15%;
+  }
+  .contact-info {
+    top: 11rem;
+  }
+  .banner .box .content {
+    top: auto;
+  }
+  .banner .box .content span {
+    font-size: 2.5rem;
+    padding-top: 0.5rem;
+  }
+  .banner .box .content .btn {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=global.css.map */

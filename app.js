@@ -1,5 +1,6 @@
 let navBar = document.querySelector('.header .navbar');
-let contactInfo = document.querySelector('.contact-info')
+let contactInfo = document.querySelector('.contact-info');
+let infoContact = document.querySelector('.contact-info');
 
 
 document.querySelector('#menu-btn').onclick  = () => {
@@ -11,10 +12,15 @@ document.querySelector('#contact').onclick = () => {
 };
 document.querySelector('#close-contact-info').onclick = () => {
      contactInfo.classList.remove('active');
+     infoContact.classList.remove('active');
 };
+document.querySelector('#info-btn').onclick = ()=> {
+     infoContact.classList.toggle('active');
+}
 
 window.onscroll = () => {
      navBar.classList.remove('active');
+     infoContact.classList.remove('active');
      contactInfo.classList.remove('active');
 
 }
