@@ -18,14 +18,13 @@
                flex: 1 1 42rem;
 
                h3{
-                    font-size: 3.5rem;
+                    @include titleText(3.5rem);
                     color:$black-bg;
                     line-height: 2;
                }
                p{
-                    font-size: 1.4rem;
+                    @include graphText(1.4rem);
                     line-height: 1.5;
-                    color:$light-color;
                     padding: 2rem 0;
 
                a{

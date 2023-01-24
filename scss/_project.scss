@@ -14,7 +14,7 @@
                               top: 70%;
                               left: 70%;
                               background-color: #555;
-                              color: white;
+                              color: $white;
                               font-size: 1.2rem;
                               padding: .6rem 1.2rem;
                               border: none;
@@ -23,7 +23,7 @@
                               text-align: center;
 
                               &:hover{
-                                   background-color: black;
+                                   background-color: $black;
                               }
                          }
                          
@@ -46,11 +46,10 @@
                .content{
                     padding: 2rem;
                     p{
+                         @include graphText(1.4rem);
                          max-width:60rem;
                          margin:1rem auto;
-                         font-size:1.4rem;
                          color:$black-bg;
-                         line-height: 2;
                               &:hover {
                                    color:$black;
                               }

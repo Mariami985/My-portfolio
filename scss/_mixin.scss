@@ -14,12 +14,40 @@ $light-color: #666;
 $black-bg:rgba(17, 17, 17, .7);
 $light-bg:#eee;
 $white-smoke: whitesmoke;
+$light-gray:rgb(215, 212, 212);
+$color-black: #000;
+$color-icon: rgb(125, 125, 125);
+$btn-color:rgba(85, 85, 85, 0.534);
+$bg-icon:rgb(220, 220, 220);
+
 
 
 @mixin grid($val){
      display:grid;
      grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
      gap:1.5rem;
+}
+@mixin titleText($titleSize){
+     font-size: $titleSize;
+     color:black;
+     text-transform:capitalize;
+}
+@mixin graphText($graphSize){
+     font-size: $graphSize;
+     color:$light-color;
+     line-height: 2;
+}
+@mixin iconsBox(){
+     height: 5rem;
+     width:5rem;
+     line-height: 5rem;
+     font-size:2rem;
+     cursor:pointer;
+     text-align: center;
+     &:hover{
+          background: $black;;
+          color: white;
+     }
 }
 
 html{

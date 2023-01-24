@@ -36,6 +36,8 @@ section {
 }
 .heading h1 {
   font-size: 3rem;
+  color: black;
+  text-transform: capitalize;
   text-transform: uppercase;
   color: #fff;
 }
@@ -53,6 +55,8 @@ section {
 
 .title {
   font-size: 3rem;
+  color: black;
+  text-transform: capitalize;
   color: #333;
   text-align: center;
   padding: 1rem;
@@ -167,12 +171,15 @@ section {
 }
 .banner .box .content span {
   font-size: 4rem;
+  color: black;
+  text-transform: capitalize;
   font-weight: 500;
   color: whitesmoke;
-  text-transform: capitalize;
 }
 .banner .box .content h3 {
   font-size: 1.6rem;
+  color: black;
+  text-transform: capitalize;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   color: whitesmoke;
@@ -184,7 +191,7 @@ section {
   display: inline-block;
   font-size: 1.6rem;
   text-transform: uppercase;
-  color: white;
+  color: #fff;
   text-decoration: none;
   letter-spacing: 0.6rem;
   background-color: rgba(85, 85, 85, 0.534);
@@ -209,13 +216,16 @@ section {
 }
 .about .row-about .content h3 {
   font-size: 3.5rem;
+  color: black;
+  text-transform: capitalize;
   color: rgba(17, 17, 17, 0.7);
   line-height: 2;
 }
 .about .row-about .content p {
   font-size: 1.4rem;
-  line-height: 1.5;
   color: #666;
+  line-height: 2;
+  line-height: 1.5;
   padding: 2rem 0;
 }
 .about .row-about .content p a {
@@ -260,7 +270,7 @@ section {
   top: 70%;
   left: 70%;
   background-color: #555;
-  color: white;
+  color: #fff;
   font-size: 1.2rem;
   padding: 0.6rem 1.2rem;
   border: none;
@@ -269,7 +279,7 @@ section {
   text-align: center;
 }
 .section-projects .box-container .box:hover .image a:hover {
-  background-color: black;
+  background-color: #333;
 }
 .section-projects .box-container .box .image {
   border-radius: 0.5rem;
@@ -291,11 +301,12 @@ section {
   padding: 2rem;
 }
 .section-projects .box-container .box .content p {
+  font-size: 1.4rem;
+  color: #666;
+  line-height: 2;
   max-width: 60rem;
   margin: 1rem auto;
-  font-size: 1.4rem;
   color: rgba(17, 17, 17, 0.7);
-  line-height: 2;
   cursor: pointer;
 }
 .section-projects .box-container .box .content p:hover {
@@ -319,37 +330,135 @@ section {
   color: #666;
 }
 
-.footer-section .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
+.contact-info {
+  position: fixed;
+  top: 5rem;
+  right: 0;
+  width: 35rem;
+  background: rgb(215, 212, 212);
+  height: 100%;
+  text-align: center;
+  z-index: 1100;
+  padding: 0 2rem;
+  padding-top: 5rem;
+  display: none;
 }
-.footer-section .box-container .box {
-  padding: 1rem 0;
-}
-.footer-section .box-container .box img {
-  padding-bottom: 1rem;
-}
-.footer-section .box-container .box h3 {
-  font-size: 2.2rem;
-  color: #333;
-  padding: 1rem 0;
-}
-.footer-section .box-container .box a {
+.contact-info.active {
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
   display: block;
-  font-size: 1.4rem;
-  color: #666;
+}
+.contact-info #close-contact-info {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  font-size: 4rem;
+  color: #000;
+}
+.contact-info #close-contact-info:hover {
+  transform: rotate(90deg);
+}
+.contact-info .info {
+  padding: 2rem 0;
+}
+.contact-info .info i {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  background: #eee;
+  color: #333;
+}
+.contact-info .info i:hover {
+  background: #333;
+  color: white;
+}
+.contact-info .info h3 {
+  font-size: 2rem;
+  color: black;
+  text-transform: capitalize;
   padding: 1rem 0;
 }
-.footer-section .box-container .box a:hover {
-  color: pink;
+.contact-info .info a,
+.contact-info .info p {
+  font-size: 1.5rem;
+  color: #666;
+  line-height: 2;
 }
-.footer-section .box-container .box a:hover i {
-  padding-right: 2rem;
+
+.footer-section {
+  margin-top: 10rem;
+  background: rgb(210, 210, 210);
+  padding: 4rem;
 }
-.footer-section .box-container .box i {
-  color: pink;
-  padding-right: 0.5rem;
+.footer-section .box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-section .box img {
+  width: 20%;
+  margin-left: 38%;
+  margin-bottom: 2.5rem;
+}
+.footer-section .box .title {
+  font-size: 2.5rem;
+  color: black;
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: bolder;
+  color: #666;
+  cursor: pointer;
+}
+.footer-section .box p {
+  font-size: 2.5rem;
+  color: black;
+  text-transform: capitalize;
+  font-style: italic;
+  color: #666;
+  font-weight: 300;
+}
+.footer-section .icons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-section .icons a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50%;
+  color: rgb(125, 125, 125);
+  border: 1px solid rgb(125, 125, 125);
+  background: rgb(220, 220, 220);
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.footer-section .icons a:hover {
+  background: #333;
+  color: white;
+}
+.footer-section .icons a:hover {
+  background: #666;
+}
+.footer-section .credit {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  color: #666;
+}
+.footer-section .credit span {
+  color: #333;
 }
 
 @media (max-width: 1200px) {

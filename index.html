@@ -6,27 +6,31 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Mariam Bregvadze</title>
 <!-- ! favicon link -->
-     <link  rel="shortcut icon" type="image/png" href="img/favicon1.png">
+     <link  rel="shortcut icon" type="image/png" href="img/favicon2.png">
+<!-- ! aos link -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- ! cdn font link -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<!-- ! aos link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 <!-- !  custom style link -->
      <link rel="stylesheet" href="scss/global.css">
 <!-- ! js script -->
      <script src="app.js" defer></script>
 </head>
 <body>
-<!-- ! heder section starts -->
+<!-- ! header section starts -->
      <header class="header">
-          <div class="row">
-               <img src="img/portfolio-img.jpg" alt="p-img">
-               <a href="#home" class="title">Mariam Bregvadze</a>
+          <div class="row" data-aos="zoom-in-left" data-aos-delay="150">
+               <img  src="img/portfolio-img.jpg" alt="p-img">
+               <a  href="#home" class="title">Mariam Bregvadze</a>
           </div>
           <nav class="navbar">
                <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#projects">my projects</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a></li>
+                    <li><a data-aos="zoom-in-left" data-aos-delay="450" href="#about">about</a></li>
+                    <li><a data-aos="zoom-in-left" data-aos-delay="600"  href="#projects">my projects</a></li>
+                    <li><a data-aos="zoom-in-left" data-aos-delay="750" href="#contact" id="contact">contact</a></li>
                </ul>
           </nav>
           <div class="icons">
@@ -39,11 +43,11 @@
 <!-- ! home section starts -->
      <div class="banner" id="home">
           <div class="box">
-               <img src="img/home-img.jpg" alt="home-img"></img>
+               <img src="img/about-img.jpg" alt="home-img">
                <div class="content">
-                    <span>hello, My name is Mariam</span>
-                    <h3>I'm angular front-end developer</h3>
-                    <a href="#projects" class="btn"> my portfolio</a>
+                    <span  data-aos="fade-up" data-aos-delay="150">hello, My name is Mariam</span>
+                    <h3  data-aos="fade-up" data-aos-delay="300">I'm angular front-end developer</h3>
+                    <a  data-aos="fade-up" data-aos-delay="450" href="#projects" class="btn"> my portfolio</a>
                </div>
           </div>
      </div>
@@ -53,10 +57,10 @@
 <section class="about" id="about">
      <h1 class="title">About me</h1>
      <div  class="row-about">
-          <div class="image">
-               <img src="img/about-img.jpg" alt="about-img">
+          <div class="image" data-aos-delay="30 data-aos="fade-up data-aos-delay="6000">
+               <img src="img/home-img.jpg" alt="about-img">
           </div>
-          <div class="content">
+          <div class="content" data-aos="fade-right" data-aos-delay="600">
                <h3>hi, Nice to meet you.</h3>
                <p>I learn front-end approximately 2 years. I know: Html; Css; 
                Scss; Javascript(JS6); Angular; Git, Github</p>
@@ -72,7 +76,7 @@
 <section class="section-projects" id="projects">
      <h1 class="title">My projects</h1>
      <div class="box-container">
-          <div class="box">
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
                <div class="image">
                     <img src="img/project-1.jpg" alt="blog1">
                     <a href="https://mariami985.github.io/We-Build/" target=_blank>visit page >></a>
@@ -85,7 +89,7 @@
                     </div>
                </div>
           </div>
-          <div class="box">
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
                <div class="image">
                     <img src="img/project-2.jpg" alt="project-2">
                     <a href="https://mariami985.github.io/My-glasses/" target=_blank>visit page >></a>
@@ -98,7 +102,7 @@
                     </div>
                </div>
           </div>
-          <div class="box">
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
                <div class="image">
                     <img src="img/project-3.jpg" alt="project-3">
                     <a href="https://mariami985.github.io/Travel/" target=_blank>visit page >></a>
@@ -111,7 +115,20 @@
                     </div>
                </div>
           </div>
-          <div class="box" >
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="600">
+               <div class="image">
+                    <img src="img/sign-up1.jpg" alt="sign-up">
+                    <a href="https://mariami985.github.io/Sing-up-step-by-step/" target=_blank>visit page >></a>
+               </div>
+               <div class="content">
+                    <p>sign up page</p>
+                    <div class="icon">
+                         <a href="#"><i class="fas fa-clock"></i>21st Sec, 2022</a>
+                         <a href="#"><i class="fas fa-user"></i>by Mariam</a>
+                    </div>
+               </div>
+          </div>
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="750" >
                <div class="image">
                     <img src="img/project-4.jpg" alt="project-4">
                     <a href="https://mariami985.github.io/Online-shop/" target=_blank>visit page >></a>
@@ -124,7 +141,7 @@
                     </div>
                </div>
           </div>
-          <div class="box">
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="900">
                <div class="image">
                     <img src="img/project-5.jpeg" alt="project-5">
                     <a href="https://mariami985.github.io/project/" target=_blank>visit page >></a>
@@ -137,20 +154,20 @@
                     </div>
                </div>
           </div>
-          <div class="box">
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="1050">
                <div class="image">
                     <img src="img/project-6.jpg" alt="project-6">
                     <a href="https://mariami985.github.io/homework11/" target=_blank>visit page >></a>
                </div>
                <div class="content">
-                    <p>hotel zetta.</p>
+                    <p>hotel zetta</p>
                     <div class="icon">
                          <a href="#"><i class="fas fa-clock"></i>16st Nov, 2020</a>
                          <a href="#"><i class="fas fa-user"></i>by Marian</a>
                     </div>
                </div>
           </div>
-          <div class="box" >
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="1200">
                <div class="image">
                     <img src="img/project-7.jpg" alt="project-7">
                     <a href="https://mariami985.github.io/Final-project/" target=_blank>visit page >></a>
@@ -163,7 +180,7 @@
                     </div>
                </div>
           </div>
-          <div class="box">
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="1350">
                <div class="image">
                     <img src="img/img4.png" alt="img8">
                     <a href="https://github.com/Mariami985?tab=repositories" target=_blank>visit page >></a>
@@ -180,41 +197,56 @@
      </div>
 </section>
 <!-- ! Projects section ends -->
+<!-- ! contact info starts -->
+<div class="contact-info">
+     <div id="close-contact-info" class="fas fa-times"></div>
+     <div class="info">
+          <i class="fas fa-phone"></i>
+          <h3>phone number</h3>
+          <a href="tel:+995 592 389 389">+995 592 389 389</a>
+     </div>
+     <div class="info">
+          <i class="fas fa-envelope"></i>
+          <h3>email address</h3>
+          <a href = "mailto: bregvadzemy@gmail.com">bregvadzemy@gmail.com</a>
 
+     </div>
+     <div class="info">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Georgia, Tbilisi,</p>
+     </div>
+</div>
+
+<!-- ! contact info ends -->
 
 <!-- ! footer section starts -->
-     <footer class="footer-section" id="contact">
-          <div class="box-container">
-               <div class="box" data-aos="fade-up" data-aos-delay="300">
-                    <img src="img/portfolio-img.jpg" alt="p-img">
-                    <h1 class="title">Let's talk with me</h1>
-                    <h3>follow me</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <!-- <div class="share">
-                         <a href="#" class="fab fa-facebook-f"></a>
-                         <a href="#" class="fab fa-twitter"></a>
-                         <a href="#" class="fab fa-instagram"></a>
-                         <a href="#" class="fab fa-linkedin"></a>
-                    </div> -->
-               <div class="share">
-                    <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
-                    <a href="#"><i class="fab fa-instagram"></i>instagram</a>
-                    <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
-                    <a href="#"><i class="fab fa-github"></i>github</a>
-               </div>
-               <div class="box" data-aos="fade-up"  data-aos-delay="600">
-                    <h3>contact info</h3>
-                    <p><i class="fas fa-map"></i>batumi, georgia</p>
-                    <p><i class="fas fa-phone"></i>+995 555-11-11-11</p>
-                    <p><i class="fas fa-envelope"></i>travel@gamil.com</p>
-                    <p><i class="fas fa-clock"></i>8:00am - 20:00pm</p>
+<footer class="footer-section" id="contact" data-aos="fade-up" data-aos-delay="300">
+          <div class="box">
+               <img src="img/favicon2.png" alt="foo-img">
+               <h1 class="title">Let's talk with me</h1>
+               <p>I am always ready for learning, challenges and hard work</p>
+          </div>
+               <div class="icons">
+                    <a href="https://www.facebook.com/mari.bregvadze.3954/ " target="_blank" class="fab fa-facebook-f fb"></a>
+                    <a href="https://www.instagram.com/mariami_bregvadze/" target="_blank" class="fab fa-instagram ins"></a>
+                    <a href="https://www.linkedin.com/in/mariami-bregvadze-115275209/" target="_blank" class="fab fa-linkedin lin"></a>
+                    <a href="https://github.com/Mariami985?tab=repositories" target="_blank" class="fab fa-github git"></a>
                </div>
           </div>
-     </footer>
+          <div class="credit">created by <span>Mariam Bregvadze</span> | all rights reserved!</div>
+</footer>
+
 
 <!-- ! footer section ends -->
 
-
-
+<!-- ! aos script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+               <script>
+                    AOS.init({
+                         duration :800,
+                         offset:150,
+                    });
+               </script>
 </body>
 </html>

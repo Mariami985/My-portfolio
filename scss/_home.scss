@@ -1,11 +1,9 @@
 .banner{
-     // @include grid(31rem);
      padding:0;
      position: relative;
      .box{
                display: flex;
                min-height: 60vh;
-               // padding:2rem 7%;
                background-size: cover !important;
                background-position: center !important;
                align-items: center;
@@ -17,19 +15,16 @@
           .content{
                position: absolute;
                top:35%; left: 5rem;
-               // padding-bottom: 2rem;
-               // transform: translateY(-50%);
                span{
-                    font-size: 4rem;
+                    @include titleText(4rem);
                     font-weight: 500;
-                    color:whitesmoke;
-                    text-transform: capitalize;
+                    color:$white-smoke;
                }
                h3{
-                    font-size: 1.6rem;
+                    @include titleText(1.6rem);
                     text-transform: uppercase;
                     letter-spacing: .5rem;
-                    color:whitesmoke;
+                    color:$white-smoke;
                     padding-top: 15px;
                }
                .btn{
@@ -38,10 +33,10 @@
                      display:inline-block;
                      font-size: 1.6rem;
                      text-transform: uppercase;
-                     color:white;
+                     color:$white;
                      text-decoration: none;
                      letter-spacing: .6rem;
-                      background-color: rgba(85, 85, 85, 0.534);
+                      background-color:$btn-color;
                }
           }
 
