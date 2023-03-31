@@ -78,7 +78,6 @@ section {
 }
 
 .header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -133,13 +132,6 @@ section {
 #menu-btn,
 #info-btn {
   display: none;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    transform: translateX(3rem);
-    opacity: 0;
-  }
 }
 
 @keyframes fadeIn {
@@ -478,7 +470,7 @@ section {
     display: none;
   }
   #menu-btn,
-#info-btn {
+  #info-btn {
     display: inline-block;
   }
   .header {
